@@ -15,8 +15,8 @@ const Welcome = () => {
       <h4 className="portfolio-header"> Portfolio </h4>
       <Portfolio />
       <footer>
-        <i className="fa fa-heart-o" aria-hidden="true"></i>
         <span> Sept 2016 </span>
+        <i className="fa fa-heart-o" aria-hidden="true"></i>
       </footer>
     </div>
   );

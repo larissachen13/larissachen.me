@@ -44,8 +44,9 @@ body {
   flex-direction:column;
   justify-content: center;
   align-items:center;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
+  /*border: solid #000 4px;*/
   font-family: 'Roboto';
   font-weight: 300px;
   text-transform:uppercase;
@@ -53,12 +54,14 @@ body {
   line-height: 20px;
   padding: 30px 20px 20px 20px;
   position: absolute;
-  top: 380px;
+  top: 340px;
   height: 320px;
-  left: 5%;
+  left: 6.5%;
   width: 35%;
+  box-shadow: 2px 2px 47px #303030;
+  border-radius: 4px;
   p {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
 }
 
@@ -194,8 +197,12 @@ body {
   }
 }
 
-.footer {
+footer {
   display:flex;
   flex-direction:row;
-  justify-content:center; 
+  justify-content:center;
+  text-align:center;
+  i {
+    margin-left: 5px;
+  }
 }
