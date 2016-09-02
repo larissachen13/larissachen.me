@@ -5,6 +5,7 @@ import './style.scss';
 
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
+require('font-awesome/css/font-awesome.css');
 
 
 // entry point that just renders app

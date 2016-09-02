@@ -1,6 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700|Open+Sans:400,600,700|Open+Sans+Condensed:300|Raleway:100,200,500,600,700,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700,700i,900);
+ $buttonColor: lighten(green, 50%);
+
 body {
   font-family: "Roboto", sans-serif;
-  color: rgb(10%, 10%, 10%);
-  background: darken(white, 10%);
-  margin: 50px;
+  // color: rgb(10%, 10%, 10%);
+  // background: darken(white, 10%);
+}
+
+.navbarContainer{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: -10px;
+  margin-left: -10px;
+  padding: 15px 25px 15px 25px;
+  width: 110%;
+  position: fixed;
+  background: #fff;
+  border-bottom: solid 2.5px;
+  z-index: 110;
+  .name{
+    padding: 3px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    font-weight: 300;
+    font-size: 18px;
+  }
+}
+
+
+#cover {
+  background-image: url('~/bundle/../imgs/covertop.jpeg');
+  // background-image: url('https://larissa-web-portfolio.s3.amazonaws.com/cover.JPG');
+  background-size: cover;
+  height: 840px;
+  margin: 0 -50px;
+}
+
+.about {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  background: #000;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 300px;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  line-height: 20px;
+  padding: 30px 20px 20px 20px;
+  position: absolute;
+  top: 380px;
+  height: 320px;
+  left: 5%;
+  width: 35%;
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+#first, #last {
+  font-weight:100;
+}
+#middle {
+  font-family: "Raleway";
+  font-size: 20px;
+}
+#last {
+
+}
+
+.portfolio-header {
+  font-family: 'Lato';
+  margin: 40px 0 0 40px;
+  letter-spacing: 1.1px;
+  text-align: center;
+}
+
+.portfolios {
+  padding-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 70px 0 70px;
+}
+
+.portfolio-item {
+  margin-bottom: 65px;
+  .image {
+    position:relative;
+    min-width: 400px;
+  }
+  img {
+    vertical-align: top;
+    height: 300px;
+  }
+  .image:after {
+      content:'\A';
+      position:absolute;
+      width:100%; height:100%;
+      top:0; left:0;
+      background:rgba(0,0,0,0.6);
+      opacity:0;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      cursor:pointer;
+  }
+  .image:hover:after {
+      opacity:1;
+  }
+  .image:hover {
+    .view-more-link{display:block}
+  }
+  .view-more-link {
+    background: #f7f7f7;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    display: none;
+    border:none;
+    :active {
+      outline: none;
+      border: none;
+    }
+    width: 180px;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    margin: 0 auto;
+    padding-top:5px;
+  }
+  .title {
+    font-family: 'Raleway';
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+}
+#tse {
+  padding-left: 180px;
+}
+
+.modal-header {
+  font-family: "Raleway";
+  font-weight: 700;
+  line-height: 50px;
+  font-size: 45px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal-description {
+  font-family: "Raleway";
+  font-weight: 200;
+  text-transform:uppercase;
+  text-align: center;
+  padding: 10px 0 5px 0;
+}
+
+.modal-images {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    height: 300px;
+    margin-bottom: 50px;
+  }
+}
+
+.git-link {
+  text-align:center;
+  text-align:center;
+  width:100%;
+  margin-bottom: 4px;
+  a {
+    text-decoration:none;
+    color: #000;
+    font-family: 'Open Sans';
+  }
+  a:hover {
+    text-decoration:none;
+    color:#000;
+    font-weight:600;
+  }
+}
+
+.footer {
+  display:flex;
+  flex-direction:row;
+  justify-content:center; 
 }
