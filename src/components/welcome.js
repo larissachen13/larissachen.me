@@ -4,6 +4,7 @@ import Portfolio from './portfolio';
 const handleClick = (event) => {
   event.target.classList.toggle('active');
   event.target.parentElement.nextElementSibling.classList.toggle('show');
+  event.target.parentElement.nextElementSibling.classList.toggle('hide');
 };
 
 // function based "dumb" component with no state
@@ -18,7 +19,8 @@ const Welcome = () => {
           <i id="about-more-2" className="fa fa-2x fa-caret-right accordion" aria-hidden="true" onClick={handleClick}></i>
         </div>
         <div className="about-site panel">
-          <p> This site is built with React, CSS, and javascript </p>
+          <h4> <span> About </span> </h4>
+          <p> Hi, welcome to my site! This site is built with <span> React, CSS, and javascript </span> </p>
         </div>
       </div>
       <h4 className="portfolio-header"> Portfolio </h4>

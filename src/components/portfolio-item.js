@@ -25,7 +25,7 @@ class PortfolioItem extends React.Component {
     return (
       <div key={this.props.portfolio.id} id={this.props.portfolio.id} className="portfolio-item">
         <div className="image">
-          <img role="presentation" src={this.props.portfolio.photos[0]} alt=" " />
+          <div className="image-container"> <img role="presentation" src={this.props.portfolio.photos[0]} alt=" " /> </div>
           <button className="view-more-link" onClick={this.open}> <span> View More </span> </button>
         </div>
         <h2 className="title"> {this.props.portfolio.name} </h2>

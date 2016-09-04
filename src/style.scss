@@ -72,7 +72,7 @@ body {
   box-shadow: 2px 2px 47px #303030;
   border-radius: 4px;
   p {
-    margin-bottom: 27px;
+    margin-bottom: 29px;
   }
   #about-more-2 {
     position:absolute;
@@ -90,18 +90,35 @@ body {
 }
 
 .about-site {
-  font-family: 'Open Sans';
+  font-family: Roboto;
+  font-weight:100; 
+  font-size: 17px;
+  letter-spacing: .5px;
   position: absolute;
-  height: 320px;
-  width: 400px;
-  left: 600px;
-  background: #fff;
+  height: 200px;
+  width: 390px;
+  left: 610px;
+  background: #f5f5f5;
   top: 360px;
+  border-radius: 0px;
+  /*border-image: url('http://i.stack.imgur.com/s2CAw.png');*/
+  border-image-slice: 1;
+  border-image-width: 5px;
   padding: 30px 20px 20px 20px;
+  transition: all ease-in-out .75s;
   p {
     position: absolute;
-    top: 50%;
+    top: 42%;
     text-align:center;
+  }
+  h4 {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    text-transform: uppercase;
+    span {
+      border-bottom: solid;
+    }
   }
 }
 
@@ -117,10 +134,7 @@ body {
 
 .panel {
   padding: 0 18px;
-  background-color: white;
-  max-width: 0;
   overflow: hidden;
-  transition: .6s ease-in-out ;
   opacity: 0;
 }
 
@@ -129,8 +143,28 @@ body {
   max-width: 500px;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 #first, #last {
   font-weight:100;
+  font-size:15px;
 }
 #middle {
   font-family: "Raleway";
@@ -161,6 +195,9 @@ body {
   .image {
     position:relative;
     min-width: 400px;
+  }
+  .image-container {
+    text-align:center;
   }
   img {
     vertical-align: top;
