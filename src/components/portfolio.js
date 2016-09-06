@@ -15,7 +15,7 @@ class Portfolios extends React.Component {
       );
     });
     return (
-      <div className="portfolios">
+      <div className="portfolios" id="portfolios">
         {portfolioItems}
       </div>
     );

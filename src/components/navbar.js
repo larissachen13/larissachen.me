@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router';
 import '../style.scss';
-import { $ } from 'jquery';
+import scrollToElement from 'scroll-to-element';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -9,17 +9,18 @@ class Navbar extends React.Component {
     this.state = {};
   }
   scroll(e) {
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: $('#portfolios').offset().top,
-    }, 2000);
+    scrollToElement('#portfolios', {
+      offset: -100,
+      ease: 'in-out-sine',
+      duration: 1500,
+    });
   }
 
   render() {
     return (
       <div className="navbarContainer">
         <div className="name"> Larissa Chen </div>
-        <a rel="" href="#portfolios" onClick={this.scroll}> <i className="fa fa-chevron-down fa-2x" aria-hidden="true"></i> </a>
+        <a rel="" className="smooth-scrolling" href="#" onClick={this.scroll}> <i className="fa fa-chevron-down fa-2x" aria-hidden="true"></i> </a>
       </div>
     );
   }

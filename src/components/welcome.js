@@ -24,7 +24,7 @@ const Welcome = () => {
         </div>
       </div>
       <h4 className="portfolio-header"> Portfolio </h4>
-      <Portfolio id="portfolios" />
+      <Portfolio />
       <footer>
         <span> Sept 2016 </span>
         <i className="fa fa-heart-o" aria-hidden="true"></i>
