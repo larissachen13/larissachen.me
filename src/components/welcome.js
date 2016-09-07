@@ -8,7 +8,7 @@ const handleClick = (event) => {
 };
 
 // function based "dumb" component with no state
-const Welcome = () => {
+const Welcome = (props) => {
   return (
     <div>
       <div id="cover">
@@ -24,7 +24,7 @@ const Welcome = () => {
         </div>
       </div>
       <h4 className="portfolio-header"> Portfolio </h4>
-      <Portfolio />
+      <Portfolio changeToUp={props.changeToUp} changeToDown={props.changeToDown} />
       <footer>
         <span> Sept 2016 </span>
         <i className="fa fa-heart-o" aria-hidden="true"></i>

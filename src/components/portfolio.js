@@ -7,6 +7,18 @@ class Portfolios extends React.Component {
     super(props);
     this.state = {};
   }
+  componentDidMount() {
+    window.addEventListener('scroll', (event) => {
+      const portFoliosRect = this.refs.portfolios.getBoundingClientRect();
+      const offset = 300;
+      if (portFoliosRect.top <= 100 + offset) {
+        this.props.changeToDown();
+      }
+      if (portFoliosRect.top > 100 + offset) {
+        this.props.changeToUp();
+      }
+    });
+  }
 
   render() {
     const portfolioItems = portfolios.map((portfolio) => {
@@ -15,7 +27,7 @@ class Portfolios extends React.Component {
       );
     });
     return (
-      <div className="portfolios" id="portfolios">
+      <div className="portfolios" ref="portfolios"id="portfolios">
         {portfolioItems}
       </div>
     );
