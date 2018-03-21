@@ -10,6 +10,7 @@ class PortfolioItem extends React.Component {
     this.close = this.close.bind(this);
   }
   open() {
+    console.log("opneing");
     this.setState({ showMore: true });
   }
   close() {
@@ -21,7 +22,13 @@ class PortfolioItem extends React.Component {
         <img role="presentation" key={imgItem} src={imgItem} />
       );
     });
-    const gitLink = this.props.portfolio.git ? <div className="git-link"> <a target="_blank" href={this.props.portfolio.git}> Github </a> </div> : '';
+    const gitLink = this.props.portfolio.git ? 
+      <div className="git-link"> 
+        <a target="_blank" href={this.props.portfolio.git}> 
+          {this.props.portfolio.git} 
+        </a> 
+      </div> 
+    : '';
     return (
       <div key={this.props.portfolio.id} id={this.props.portfolio.id} className="portfolio-item">
         <div className="image">

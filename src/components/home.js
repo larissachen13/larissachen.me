@@ -14,7 +14,6 @@ class Home extends Component {
   }
   changeToUp() {
     if (this.state.up === false) {
-      console.log('False');
       this.setState({ up: true });
     }
   }

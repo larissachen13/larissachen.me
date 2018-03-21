@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node_modules/.bin/webpack-dev-server --inline --hot",
-    "build": "WEBPACK_ENV=production node_modules/.bin/webpack --optimize-minimize --progress --color",
-    "deploy": "npm run build; surge -p . -d tim-js-starter.surge.sh"
+    "build": "WEBPACK_ENV=production node_modules/.bin/webpack --optimize-minimize --progress --color"
   },
   "repository": {
     "type": "git",
@@ -47,7 +46,7 @@
     "font-awesome": "^4.6.3",
     "marked": "^0.3.6",
     "react": "^15.2.1",
-    "react-bootstrap": "^0.30.3",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^15.2.1",
     "react-router": "^2.5.2",
     "scroll-to-element": "^2.0.0",

@@ -14,19 +14,19 @@ body {
   justify-content: space-between;
   margin-top: -10px;
   margin-left: -10px;
-  padding: 15px 25px 10px 25px;
+  padding: 16px 24px 8px 24px;
   width: 110%;
   position: fixed;
   background: #fff;
-  border-bottom: solid 2.5px;
+  border-bottom: solid 1px;
   z-index: 110;
   .name{
-    padding: 3px;
+    padding: 2px 4px;
     font-family: 'Lato';
     text-transform: uppercase;
-    letter-spacing: 1.75px;
-    font-weight: 300;
-    font-size: 18px;
+    letter-spacing: 2.75px;
+    font-weight: 400;
+    font-size: 22px;
   }
   .smooth-scrolling {
     margin-right: 20px;
@@ -61,11 +61,11 @@ body {
   line-height: 20px;
   padding: 30px 20px 20px 20px;
   position: absolute;
-  top: 340px;
+  top: 320px;
   height: 320px;
   left: 6.5%;
   width: 35%;
-  box-shadow: 2px 2px 47px #303030;
+  box-shadow: 1px 1px 32px #A9A9A9;
   border-radius: 4px;
   p {
     margin-bottom: 29px;
@@ -302,4 +302,9 @@ footer {
   i {
     margin-left: 5px;
   }
+}
+
+.heart{
+  color: #E8B39F;
+  backgroundColor: #E8B39F;
 }

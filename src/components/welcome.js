@@ -13,8 +13,8 @@ const Welcome = (props) => {
     <div>
       <div id="cover">
         <div className="about">
-          <p id="first"> Software and Web Development and Design </p>
-          <p id="middle"> Dartmouth Junior</p>
+          <p id="first"> Software Development and Design </p>
+          <p id="middle"> Dartmouth &#39;18</p>
           <p id="last"> CS Major, Double Minor in Physics and Spanish </p>
           <i id="about-more-2" className="fa fa-2x fa-caret-right accordion" aria-hidden="true" onClick={handleClick}></i>
         </div>
@@ -26,8 +26,8 @@ const Welcome = (props) => {
       <h4 className="portfolio-header"> Portfolio </h4>
       <Portfolio changeToUp={props.changeToUp} changeToDown={props.changeToDown} />
       <footer>
-        <span> Sept 2016 </span>
-        <i className="fa fa-heart-o" aria-hidden="true"></i>
+        <span> Jan 2018 </span>
+        <i className="fa fa-heart-o heart" aria-hidden="true"></i>
       </footer>
     </div>
   );

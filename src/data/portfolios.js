@@ -11,13 +11,28 @@ const portfolios = [
     ],
   },
   {
-    id: 'dartbot',
-    name: 'Dartbot',
-    description: 'Facebook Messenger Bot that answers common college tour questions and a web interface that displays tour locations, tour guide profiles, and contains a admin side to view analytics of messenger interactions. Web interface written in **react**, **D3**, **Express**, **MongoDB**, **AmazonS3 Storage**, and **SCSS** ',
+    id: 'trip planner design',
+    name: 'Trip Planner design',
+    description: 'Design for a mobile app that helps plan trips, specifically a dynamic system of building itineraries on maps similar to playlists on spotify. Design in **Figma**. ',
     photos: [
-      'https://larissa-web-portfolio.s3.amazonaws.com/dartbot-1.png',
-      'https://larissa-web-portfolio.s3.amazonaws.com/dartbot-2.png',
+      'https://larissa-web-portfolio.s3.amazonaws.com/trip-planner-mock-1.png',
+      'https://larissa-web-portfolio.s3.amazonaws.com/trip-planner-mock-1.png',
+      'https://larissa-web-portfolio.s3.amazonaws.com/trip-planner-mock-2.png',
+      'https://larissa-web-portfolio.s3.amazonaws.com/trip-planner-mock-3.png',
+      'https://larissa-web-portfolio.s3.amazonaws.com/trip-planner-mock-4.png',
     ],
+    git: 'https://www.figma.com/file/SuHNQULMa5oGeBNwZdIRFNCH/New',
+  },
+  {
+    id: 'wanderlust',
+    name: 'Wanderlust',
+    description: 'Mobile app that serves as an instagram for travelers. Frontend built in **react-native**. Backend built with **Express**, **MongoDB**, **AmazonS3 Storage**. ',
+    photos: [
+      'https://larissa-web-portfolio.s3.amazonaws.com/wanderlust-1.png',
+      'https://larissa-web-portfolio.s3.amazonaws.com/wanderlust-2.png',
+      'https://larissa-web-portfolio.s3.amazonaws.com/wanderlust-3.png',
+    ],
+    git: 'https://www.figma.com/file/NayfOdslCfT5fL3SuE6I3AQj/MVP',
   },
   {
     id: 'maze',
